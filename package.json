@@ -4,7 +4,8 @@
   "description": "Landing page for pulsarship",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "deploy": "yarn install && yarn build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,7 @@
   },
   "homepage": "https://github.com/pguilbert/pulsarship#readme",
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.8.1"
   }
 }
